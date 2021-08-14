@@ -1,42 +1,19 @@
 <template>
-  <v-app class="overflow-hide">
-    <MainHeader></MainHeader>
-    <MainAboutHero></MainAboutHero>    
-    <Partners
-      v-bind:title="'Наші партнери - університети'"
-      v-bind:images="Universities"
-    ></Partners>  
-    <Partners
-      v-bind:title="'Наші партнери - IT компанії'"
-      v-bind:images="Bissnes"
-    ></Partners>
-    <JoinUs></JoinUs>
-    <Footer></Footer>
+  <v-app>
+    <router-view></router-view>
   </v-app>
 </template>
 
 <script>
-import MainHeader from '@/components/MainPage/MainHeader'
-import MainAboutHero from '@/components/MainPage/MainAboutHero'
-import Partners from '@/components/MainPage/Partners'
-import JoinUs from '@/components/MainPage/JoinUs'
-import Footer from '@/components/Footer'
-//images
-import PstuLogo from '@/assets/pstu_logo.png'
-import StartupLogo from '@/assets/1991_logo.png'
-import MakebecoolLogo from '@/assets/makebecool_logo.png'
-import ArchatLogo from '@/assets/arhat_logo.png'
 
 export default {
   name: 'App',
 
   components: {
-    MainHeader, MainAboutHero, Partners, JoinUs, Footer
+    
   },
 
   data: () => ({
-    Universities: [PstuLogo, PstuLogo, PstuLogo],
-    Bissnes: [StartupLogo, MakebecoolLogo, ArchatLogo]
   }),
 };
 </script>
@@ -86,5 +63,11 @@ export default {
     background: linear-gradient(90deg, #00C4DF -31.56%, rgba(11, 129, 229, 0.76) 37.19%, rgba(31, 13, 239, 0.0621078) 123.71%, rgba(195, 196, 196, 0.00520833) 123.73%, rgba(196, 196, 196, 0) 123.74%);
     color: #ffffff !important;
     font-weight: 600;
+  }
+  .relative{
+    position: relative;
+  }
+  .absolute {
+    position: absolute;
   }
 </style>

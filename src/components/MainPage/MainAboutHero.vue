@@ -23,7 +23,7 @@
         </v-col>
       </v-row>
       <v-row class="d-flex align-center">
-        <v-col class="text-body-2 text-xl-h6 text-lg-h6 text-md-body-1 text-sm-body-2" 
+        <v-col class="text-body-2 text-xl-h6 text-lg-h6 text-md-body-1 text-sm-body-2 onTop" 
         cols="10" xl="4" lg="4" md="4" sm="4"
         offset="1" offset-xl="0" offset-lg="0" offset-md="0" offset-sm="0">
           <h4 class="text-center text-h5 text-xl-h4 text-lg-h4 text-md-h4 mb-3 titles">Для бізнесу</h4>
