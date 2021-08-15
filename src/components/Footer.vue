@@ -10,17 +10,21 @@
         class="text-center"
         >
         <v-card-text>
-            <v-btn
+          
+          <v-btn
             v-for="icon in icons"
             :key="icon"
             class="mx-5"
             icon
             x-large
             >
-            <v-icon size="36px">
+            <v-hover v-slot="{ hover }">
+            <v-icon size="36px" :color="hover ? 'blue' : ''">
                 {{ icon }}
             </v-icon>
-            </v-btn>
+            </v-hover>
+          </v-btn>
+          
         </v-card-text>
 
         <!--
@@ -31,7 +35,7 @@
         <v-divider></v-divider>
 
         <v-card-text class="">
-            {{ new Date().getFullYear() }} — <v-icon>mdi-copyright</v-icon><strong> Claster</strong>
+            {{ new Date().getFullYear() }} — <v-icon>mdi-copyright</v-icon><strong> CLUSTER</strong>
         </v-card-text>
       </v-card>
     </v-col>

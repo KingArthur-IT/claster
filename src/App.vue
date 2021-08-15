@@ -64,10 +64,4 @@ export default {
     color: #ffffff !important;
     font-weight: 600;
   }
-  .relative{
-    position: relative;
-  }
-  .absolute {
-    position: absolute;
-  }
 </style>
