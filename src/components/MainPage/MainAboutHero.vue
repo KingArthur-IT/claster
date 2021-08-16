@@ -64,7 +64,4 @@
     .text-h5, .text-xl-h4, .text-lg-h4, .text-md-h4{
       font-family: 'Scada Regular' !important;
     }
-    .onTop {
-      z-index: 10;
-    }
 </style>
