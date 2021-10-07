@@ -23,8 +23,8 @@
     import Footer from '@/components/Footer'
     //images
     import PstuLogo from '@/assets/pstu_logo.png'
-    import StartupLogo from '@/assets/1991_logo.png'
-    import MakebecoolLogo from '@/assets/makebecool_logo.png'
+    //import StartupLogo from '@/assets/1991_logo.png'
+    //import MakebecoolLogo from '@/assets/makebecool_logo.png'
     import ArchatLogo from '@/assets/arhat_logo.png'
 
     export default {
@@ -36,7 +36,7 @@
 
     data: () => ({
         Universities: [PstuLogo, PstuLogo, PstuLogo],
-        Bissnes: [StartupLogo, MakebecoolLogo, ArchatLogo]
+        Bissnes: [ArchatLogo, ArchatLogo, ArchatLogo]
     }),
     };
 </script>
