@@ -3,7 +3,9 @@
         <Header />
         <InfoBlock />
         <About />
+        <Education />
         <Skills />
+        <Activity />
         <Footer />
     </div>
 </template>
@@ -14,12 +16,14 @@
     import InfoBlock from '@/components/ProfilePage/InfoBlock'
     import About from '@/components/ProfilePage/About'
     import Skills from '@/components/ProfilePage/Skills'
+    import Education from '@/components/ProfilePage/Education'
+    import Activity from '@/components/ProfilePage/Activity'
 
     export default {
     name: 'StudentPage',
 
     components: {
-        Header, Footer, InfoBlock, About, Skills
+        Header, Footer, InfoBlock, About, Skills, Education, Activity
     },
 
     data: () => ({

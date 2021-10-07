@@ -53,7 +53,7 @@
         >
         <template v-slot:activator="{ on, attrs }">
             <!-- Avatar + Info -->
-            <div class="d-flex align-center">
+            <div class="d-flex align-center" v-bind="attrs" v-on="on">
                 <div>
                     <v-avatar :size="avatarSize">
                         <v-img src="https://cdn.vuetifyjs.com/images/john.png"></v-img>
@@ -68,7 +68,7 @@
                             <v-list-item-subtitle>john@vuetifyjs.com</v-list-item-subtitle>
                         </v-list-item-content>
 
-                        <v-list-item-action v-bind="attrs" v-on="on">
+                        <v-list-item-action>
                             <v-icon>mdi-menu-down</v-icon>
                         </v-list-item-action>
                         </v-list-item>
