@@ -14,7 +14,7 @@
             </div>
             <h3 class="titles">{{university.name}}</h3>
         </div>
-        <div class="mt-3" v-for="item in university.delatails" v-bind:key="item">
+        <div class="mt-3" v-for="item in university.delatails" v-bind:key="item.value">
             <strong class="mr-5">{{item.name}}</strong>{{item.value}}
         </div>
     </v-col>
