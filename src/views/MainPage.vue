@@ -1,6 +1,5 @@
 <template>
     <div class="overflow-hide">
-        <NavUnauthorized />
         <v-row>
             <v-col cols="10" offset="1" class="title-shift text-center text-lg-h3 text-md-h3 text-sm-h4 text-h5">
                 <strong class="titles">
@@ -60,22 +59,18 @@
                 </v-col>
             </v-row>
         </v-container>
-        <div class="text-center text-h5 text-sm-h4 text-md-h3 text-lg-h3 text-xl-h3 mb-7">Приєднуйся до нас!</div>
+        <div class="text-center text-h5 text-sm-h4 text-md-h4 text-lg-h4 text-xl-h4 mb-7">Приєднуйся до нас!</div>
         <Button :text="'Приєднатися'" :isLarge="true" class="d-flex m-auto"/>
-        <Footer></Footer>
     </div>
 </template>
 
 <script>
-    import NavUnauthorized from '@/components/Navbars/NavUnauthorized'
-    import Footer from '@/components/Footer'
     import Button from '@/components/UIKit/Button'
 
     export default {
     name: 'MainPage',
-
     components: {
-        NavUnauthorized, Footer, Button
+        Button
     },
 
     data: () => ({

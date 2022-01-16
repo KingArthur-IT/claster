@@ -1,19 +1,19 @@
 <template>
-  <div class="w-100">
+    <v-app>
       <NavUnauthorized />
-      <div class="container-fluid mt-3">
-        <router-view />
-      </div>
-    </div>
+      <router-view></router-view>
+      <Footer></Footer>
+    </v-app>
 </template>
 
 <script>
 import NavUnauthorized from '@/components/Navbars/NavUnauthorized'
+import Footer from '@/components/Footer'
 
 export default {
-  name: "default",
+  name: "unauth",
   components:{
-    NavUnauthorized,
+    NavUnauthorized, Footer
   },
 }
 </script>

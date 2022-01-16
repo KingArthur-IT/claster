@@ -9,7 +9,7 @@ Vue.use(Router);
 export default new Router({
     mode: 'history',
     routes: [
-        { path: '/', name: 'MainPage', component: MainPage },
+        { path: '/', name: 'MainPage', component: MainPage, meta: {layout: 'unauth'} },
         { path: '/Home', name: 'StudentPage', component: StudentPage }
     ]
 })
