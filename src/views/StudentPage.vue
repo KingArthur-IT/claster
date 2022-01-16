@@ -1,6 +1,6 @@
 <template>
     <div class="overflow-hide">
-        <Header />
+        <NavAuthorized />
         <InfoBlock />
         <About />
         <Education />
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-    import Header from '@/components/Header'
+    import NavAuthorized from '@/components/Navbars/NavAuthorized'
     import Footer from '@/components/Footer'
     import InfoBlock from '@/components/ProfilePage/InfoBlock'
     import About from '@/components/ProfilePage/About'
@@ -23,7 +23,7 @@
     name: 'StudentPage',
 
     components: {
-        Header, Footer, InfoBlock, About, Skills, Education, Activity
+        NavAuthorized, Footer, InfoBlock, About, Skills, Education, Activity
     },
 
     data: () => ({
