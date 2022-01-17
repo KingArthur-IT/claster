@@ -2,101 +2,76 @@
     <v-container class="onTop">
       <v-row class="d-flex mb-2 mb-sm-8 justify-space-between" align="center">
         <!-- Logo -->
-        <v-col cols="5" xl="2" lg="2" md="3" sm="3"
-        class="mr-auto">
+        <v-col cols="5" xl="2" lg="2" md="3" sm="3" class="mr-auto">
           <v-img
             src="@/assets/cluster_header_logo.png"
             height="100%"
           ></v-img>
         </v-col>
         <v-spacer></v-spacer>
-        <div
-        class="ml-auto d-flex align-center">
-        <!-- Find Btn -->
-        <v-menu
-                offset-y
-                bottom
-            >
-            <template v-slot:activator="{ on, attrs }">
-                <v-hover v-slot="{ hover }">
-                    <!-- :color="hover ? 'blue lighten-4 btnbg' : 'white'"  -->
-                <v-btn v-bind="attrs" v-on="on" elevation="0" x-large :class="{'btn-bg white--text': hover}" color="white" id="findBtn">
-                    Знайти <v-icon>mdi-menu-open</v-icon>
-                </v-btn>
-                </v-hover>
-            </template>
-            <!-- List -->
-            <v-list nav dense transition="slide-y-transition">
-                <v-list-item-group
-                    color="primary"
-                >
-                <v-list-item
-                    v-for="(item, i) in findItems"
-                    :key="i"
-                >
-                    <v-list-item-icon>
-                    <v-icon v-text="item.icon"></v-icon>
-                    </v-list-item-icon>
+        <!-- Actions -->
+        <div class="ml-auto d-flex align-center">
+            <!-- Find Btn -->
+            <v-menu offset-y bottom >
+                <template v-slot:activator="{ on, attrs }">
+                    <v-hover v-slot="{ hover }">
+                        <v-icon v-bind="attrs" v-on="on" elevation="0" x-large :class="{'blue--text': hover}" id="findBtn">mdi-magnify-expand</v-icon>
+                    </v-hover>
+                </template>
+                <!-- List -->
+                <v-list nav dense transition="slide-y-transition">
+                    <v-list-item-group color="primary" >
+                        <v-list-item v-for="(item, i) in findItems" :key="i">
+                            <v-list-item-icon>
+                                <v-icon v-text="item.icon"></v-icon>
+                            </v-list-item-icon>
 
-                    <v-list-item-content>
-                    <v-list-item-title v-text="item.text"></v-list-item-title>
-                    </v-list-item-content>
-                </v-list-item>
-                </v-list-item-group>
-            </v-list>
-        </v-menu>
-        <!-- User Account -->
-        <v-menu
-            offset-y
-            bottom
-            class="d-flex ml-2 ml-xl-8 ml-lg-8 ml-md-8 ml-sm-8"
-        >
-        <template v-slot:activator="{ on, attrs }">
-            <!-- Avatar + Info -->
-            <div class="d-flex align-center" v-bind="attrs" v-on="on">
-                <div>
-                    <v-avatar :size="avatarSize">
-                        <v-img src="https://cdn.vuetifyjs.com/images/john.png"></v-img>
-                    </v-avatar>
-                </div>
-                    <v-list>
-                        <v-list-item>
-                        <v-list-item-content class="mobile">
-                            <v-list-item-title class="text-h6">
-                            John Leider
-                            </v-list-item-title>
-                            <v-list-item-subtitle>john@vuetifyjs.com</v-list-item-subtitle>
-                        </v-list-item-content>
-
-                        <v-list-item-action>
-                            <v-icon>mdi-menu-down</v-icon>
-                        </v-list-item-action>
+                            <v-list-item-content>
+                                <v-list-item-title v-text="item.text"></v-list-item-title>
+                            </v-list-item-content>
                         </v-list-item>
-                    </v-list>
-                <div>
-                </div>
-            </div>
-        </template>
-        <!-- List -->
-        <v-list nav dense transition="slide-y-transition">
-            <v-list-item-group
-                color="primary"
-            >
-            <v-list-item
-                v-for="(item, i) in accountItems"
-                :key="i"
-            >
-                <v-list-item-icon>
-                <v-icon v-text="item.icon"></v-icon>
-                </v-list-item-icon>
+                    </v-list-item-group>
+                </v-list>
+            </v-menu>
+            <!-- User Account -->
+            <v-menu offset-y bottom class="d-flex ml-2 ml-xl-8 ml-lg-8 ml-md-8 ml-sm-8" >
+                <template v-slot:activator="{ on, attrs }">
+                    <!-- Avatar + Info -->
+                    <div class="d-flex align-center" v-bind="attrs" v-on="on">
+                        <v-avatar :size="avatarSize">
+                            <v-img src="https://cdn.vuetifyjs.com/images/john.png"></v-img>
+                        </v-avatar>
+                        <v-list>
+                            <v-list-item>
+                                <v-list-item-content class="mobile">
+                                    <v-list-item-title class="text-h6">
+                                        John Leider
+                                    </v-list-item-title>
+                                    <v-list-item-subtitle>john@vuetifyjs.com</v-list-item-subtitle>
+                                </v-list-item-content>
 
-                <v-list-item-content>
-                <v-list-item-title v-text="item.text"></v-list-item-title>
-                </v-list-item-content>
-            </v-list-item>
-            </v-list-item-group>
-        </v-list>
-        </v-menu>
+                                <v-list-item-action>
+                                    <v-icon>mdi-menu-down</v-icon>
+                                </v-list-item-action>
+                            </v-list-item>
+                        </v-list>                            
+                    </div>
+                </template>
+                <!-- List -->
+                <v-list nav dense transition="slide-y-transition">
+                    <v-list-item-group color="primary">
+                        <v-list-item v-for="(item, i) in accountItems" :key="i">
+                            <v-list-item-icon>
+                                <v-icon v-text="item.icon"></v-icon>
+                            </v-list-item-icon>
+
+                            <v-list-item-content>
+                                <v-list-item-title v-text="item.text"></v-list-item-title>
+                            </v-list-item-content>
+                        </v-list-item>
+                    </v-list-item-group>
+                </v-list>
+            </v-menu>
         </div>
       </v-row>
     </v-container>

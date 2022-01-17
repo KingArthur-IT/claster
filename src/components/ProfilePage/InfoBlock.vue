@@ -3,10 +3,7 @@
         <v-row>
             <!-- Avatar -->
             <v-col cols="4">
-                <v-img
-                    src="@/assets/incognito.jpg"
-                    
-                ></v-img>
+                <v-img src="@/assets/incognito.jpg"></v-img>
             </v-col>
             <!-- User Info -->
             <v-col cols="4">
@@ -18,18 +15,13 @@
                 </div>
             </v-col>
             <v-spacer></v-spacer>
-            <!-- Props -->
-            <v-col cols="2#48bcea" class="d-flex flex-column relative">
-                
-                <div class="status mb-4 onTop mt-16">{{userStatus}}</div>
-                <div class="d-flex flex-column onTop">
-                    <strong class="mb-1">Рейтинг: </strong>
-                    <div>
-                        <v-icon normal color="#48bcea">mdi-cup</v-icon> {{userRating}}
-                    </div>
-                </div>
-            </v-col>
         </v-row>
+        <div>
+            <h2 class="titles text-center mb-5">Про мене</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo aut pariatur illum voluptatem exercitationem ea nesciunt accusantium? Quam dolor voluptatum, provident consequatur ab nobis. Expedita perspiciatis consequatur accusantium nisi distinctio eum error itaque assumenda, nam quibusdam iste quod magni, exercitationem non reprehenderit soluta repellat libero omnis. Natus eaque suscipit aut eveniet deleniti adipisci hic dolorem voluptas temporibus dolores? Temporibus atque quod nulla nesciunt quibusdam tenetur placeat incidunt? Officiis omnis harum aliquam consectetur quo dolor labore nulla totam amet natus architecto veniam dolorum, repudiandae accusamus obcaecati, sit sint aspernatur minima sed quod maxime sapiente itaque quas excepturi. Consectetur nulla dolorem aliquid dolorum aliquam sequi maiores rem possimus et officiis, totam saepe ex? Magnam quasi animi provident quidem neque consequuntur vero, nemo nihil facere at labore ratione ipsum quae pariatur odio sed quibusdam voluptas reiciendis corporis quos in beatae delectus fugiat eius! Quo sit iure cumque inventore fuga praesentium. Quaerat consectetur, illum consequuntur delectus ratione alias harum veniam, amet nisi fuga est consequatur. Doloribus architecto nostrum soluta, deserunt vitae saepe illo nemo quas temporibus tempore, eius atque laborum quisquam consectetur aspernatur eaque animi earum. Non corporis iste perspiciatis, rerum quisquam quae eius nulla mollitia illo ipsum amet velit libero, ad inventore?
+            </p>
+        </div>
     </v-container>
 </template>
 
@@ -62,5 +54,8 @@ export default {
     padding: 20px;
     font-weight: bold;
     text-align: center;
+}
+p{
+    text-align: justify;
 }
 </style>
