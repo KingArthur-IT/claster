@@ -2,17 +2,33 @@
     <v-container>
         <v-row>
             <!-- Avatar -->
-            <v-col cols="4">
+            <v-col cols="3">
                 <v-img src="@/assets/incognito.jpg"></v-img>
             </v-col>
             <!-- User Info -->
-            <v-col cols="4">
-                <h2 class="titles mt-16">{{userName}}</h2>
-                <div v-for="infoItem in userInfo" :key="infoItem.itemName">
-                    <div class="mt-3">
-                        <strong>{{infoItem.itemName}}</strong>{{infoItem.itemValue}}
-                    </div>
-                </div>
+            <v-col cols="9">
+                <h2 class="titles">{{userName}}</h2>
+                <p class="mt-3" v-if="userCity">
+                    <strong>Місто: </strong>{{userCity}}
+                </p>
+                <p class="mt-3" v-if="userAge">
+                    <strong>Вік: </strong>{{userAge}}
+                </p>
+                <p class="mt-3" v-if="userWork.length">
+                    <ul class="px-0">
+                        <strong>Місце роботи: </strong>
+                        <li v-for="(work, index) in userWork" :key="index" class="ml-10">{{work}}</li>
+                    </ul>                    
+                </p>
+                <p class="mt-3" v-if="userEducation.length">
+                    <ul class="px-0">
+                        <strong>Освіта: </strong>
+                        <li v-for="(education, index) in userEducation" :key="index" class="ml-10">{{education}}</li>
+                    </ul>                    
+                </p>
+                <p class="mt-3" v-if="userCite">
+                    <a :href="userCite" target="_blank" rel="noopener noreferrer">Github repository</a>
+                </p>
             </v-col>
             <v-spacer></v-spacer>
         </v-row>
@@ -36,12 +52,11 @@ export default {
 
     data: () => ({
         userName: 'Остапенко Артем',
-        userStatus: 'Студент',
-        userRating: 10,
-        userInfo: [
-            {itemName: 'Місто: ', itemValue: 'Маріуполь'},
-            {itemName: 'Сайт: ', itemValue: 'github.com'}
-        ]
+        userCity: 'Маріуполь',
+        userAge: '29 лет',
+        userWork: ['старший викладач ДВНЗ "Приазовський державний технічний університет"', 'frontend developer', 'CEO "Cluster"', 'фрилансер'],
+        userEducation: ['PhD technical sciences, 2020', 'математик-програміст, закінчив ДВНЗ "Приазовський державний технічний університет", 2014'],
+        userCite: 'github.com',
     }),
 };
 </script>

@@ -8,7 +8,7 @@
 import VueExtendLayouts from 'vue-extend-layout'
 export default {
   name: 'App',
-  components: { VueExtendLayouts }
+  components: { VueExtendLayouts },
 }
 </script>
 
@@ -41,8 +41,7 @@ export default {
     font-style: normal;
   }
   * {
-    font-family: 'Montserrat Regular' !important;
-    
+    font-family: 'Montserrat Regular' !important;    
   }
   .titles {
     font-family: 'Scada Regular' !important;
@@ -56,4 +55,5 @@ export default {
   .relative{
     position: relative;
   }
+  
 </style>

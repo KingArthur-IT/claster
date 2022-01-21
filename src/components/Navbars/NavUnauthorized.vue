@@ -15,7 +15,7 @@
           </v-col>
           <div class="d-flex justify-content-between align-center">
             <Button :text="'Приєднатися'" class="mr-2"/>
-            <Button :text="'Увійти'" />
+            <Button :text="'Увійти'" @click.native="signIn"/>
           </div>
         </div>
       </v-row>
@@ -24,9 +24,15 @@
 
 <script>
 import Button from '@/components/UIKit/Button'
+
 export default {
   name: 'NavUnauthorized',
-  components: {Button}
+  components: {Button},
+  methods: {
+    signIn(){
+      this.$router.push({name: 'SignIn'})
+    }
+  }
 }
 </script>
 
