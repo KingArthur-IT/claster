@@ -62,14 +62,6 @@ export default {
 </script>
 
 <style scoped>
-.status{
-    height: 60px;
-    width: 100%;
-    background: #48bcea;
-    padding: 20px;
-    font-weight: bold;
-    text-align: center;
-}
 p{
     text-align: justify;
 }

@@ -23,7 +23,7 @@
                         <li>Інформація для професійного розвитку</li>
                         <li>Комунікація між фахівцями та IT компаніями</li>
                         <li>Програми стужувань від провідних IT компаній</li>
-                        <li>Актіальні вакансії</li>
+                        <li>Актуальні вакансії</li>
                         <li>Тестові завдання</li>
                     </ul>
                 </v-col>
@@ -34,14 +34,32 @@
                         offset="1" offset-xl="0" offset-lg="0" offset-md="0" offset-sm="0">
                         <h4 class="text-center text-h5 text-xl-h4 text-lg-h4 text-md-h4 mb-3 titles">Для бізнесу</h4>
                     <ul>
-                        <li>швидкий пошук контактів та співробітників</li>
-                        <li>можливість зміцнити ринок IT спеціалістів</li>
+                        <li>Швидкий пошук партнерів, контактів та співробітників</li>
+                        <li>Зручне створення події</li>
+                        <li>Можливість зміцнити ринок IT спеціалістів</li>
                     </ul>
                 </v-col>
                 <v-col  cols="10" xl="7" lg="7" md="7" sm="7"
                         offset="1" offset-xl="1" offset-lg="1" offset-md="1"
                         offset-sm="1">
                     <v-img src="@/assets/it-team.jpeg" class="img-shade"></v-img>
+                </v-col>
+            </v-row>
+            <v-row class="mb-15 d-flex align-center z-index">
+                <v-col  cols="10" xl="7" lg="7" md="7" sm="7" 
+                        offset="1" offset-xl="0" offset-lg="0" offset-md="0" offset-sm="0">
+                    <v-img src="@/assets/student_preview.png" class="img-shade"></v-img>
+                </v-col>
+                <v-col  class="text-body-2 text-xl-h6 text-lg-h6 text-md-body-1 text-sm-body-2 onTop" 
+                        xl="4" lg="4" md="4" sm="4"
+                        offset="1" offset-xl="1" offset-lg="1" offset-md="1" offset-sm="0">
+                    <h4 class="text-center text-h5 text-xl-h4 text-lg-h4 text-md-h4 mb-3">Закладам вищої оствіти та здобувачам освіти</h4>
+                    <ul>
+                        <li>Розширення мережі контактів та співпраця із IT спеціалістами</li>
+                        <li>Пошук курсів, стажувань та практик</li>
+                        <li>Посилення навчальних програм</li>
+                        <li>Он-лайн портфоліо для студентів</li>
+                    </ul>
                 </v-col>
             </v-row>
         </v-container>
@@ -84,8 +102,8 @@
         position: absolute;
         width: 100%;
         height: 90%;
-        top: -7%;
-        background: linear-gradient(90deg, rgba(97, 236, 255, 0.7) -31.56%, rgba(11, 129, 229, 0.532) 37.19%, rgba(31, 13, 239, 0.0434755) 123.71%, rgba(195, 196, 196, 0.00364583) 123.73%, rgba(196, 196, 196, 0) 123.74%);
+        top: 0;
+        background: var(--primary-color);
         transform: rotate(-12deg);
         right: -35%;
         z-index: 0; 
@@ -99,8 +117,5 @@
     }
     .title-shift{
         margin-bottom: -100px;
-    }
-    .m-auto{
-        margin: auto;
     }
 </style>

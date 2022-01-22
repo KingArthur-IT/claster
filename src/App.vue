@@ -13,6 +13,11 @@ export default {
 </script>
 
 <style>
+  :root {
+    --primary-color: linear-gradient(90deg, rgba(97, 236, 255, 0.7) -31.56%, rgba(11, 129, 229, 0.532) 37.19%, rgba(31, 13, 239, 0.0434755) 123.71%, rgba(195, 196, 196, 0.00364583) 123.73%, rgba(196, 196, 196, 0) 123.74%);
+    --dark-primary-color: linear-gradient(90deg, #00C4DF -31.56%, rgba(11, 129, 229, 0.76) 37.19%, rgba(31, 13, 239, 0.0621078) 123.71%, rgba(195, 196, 196, 0.00520833) 123.73%, rgba(196, 196, 196, 0) 123.74%);
+    --light-solid-primary-color: #00BFFF;
+  }
   @font-face {
     font-family: 'Montserrat Regular';
     src: url('~@/fonts/Montserrat-Regular.eot');
@@ -55,5 +60,7 @@ export default {
   .relative{
     position: relative;
   }
-  
+  .m-auto{
+        margin: auto;
+    }
 </style>
