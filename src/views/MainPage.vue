@@ -78,7 +78,7 @@
             </v-row>
         </v-container>
         <div class="text-center text-h5 text-sm-h4 text-md-h4 text-lg-h4 text-xl-h4 mb-7">Приєднуйся до нас!</div>
-        <Button :text="'Приєднатися'" :isLarge="true" class="d-flex m-auto"/>
+        <Button :text="'Приєднатися'" :isLarge="true" class="d-flex m-auto" @click.native="registrate"/>
     </div>
 </template>
 
@@ -94,6 +94,13 @@
     data: () => ({
 
     }),
+    methods: {
+        registrate(){
+            if (this.$route.name === 'SignIn' && this.$route.params.enter_type === 'reg')
+                return;
+            this.$router.push({name: 'SignIn', params: {enter_type: 'reg'}})
+        },
+    }
     };
 </script>
 
