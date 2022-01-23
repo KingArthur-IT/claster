@@ -44,7 +44,7 @@
 <script>
 
 export default {
-    name: 'InfoBlock',
+    name: 'MainUserInfoBlock',
 
     components: {
         

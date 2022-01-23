@@ -93,12 +93,12 @@ export default {
     methods: {
         signIn () {
             if(this.$refs.signInForm.validate()){
-                this.$router.push({name: "ProfilePage"});
+                this.$router.push({name: "ProfileUserPage"});
             }
         },
         registration () {
             if(this.$refs.registrationForm.validate()){
-                this.$router.push({name: "ProfilePage"});
+                this.$router.push({name: "ProfileUserPage"});
             }
         },
     },

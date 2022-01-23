@@ -1,6 +1,6 @@
 <template>
     <div class="overflow-hide">
-        <InfoBlock />
+        <MainUserInfoBlock />
         <Education />
         <Skills />
         <Activity />
@@ -8,16 +8,16 @@
 </template>
 
 <script>
-    import InfoBlock from '@/components/ProfilePage/InfoBlock'
+    import MainUserInfoBlock from '@/components/ProfilePage/MainUserInfoBlock'
     import Skills from '@/components/ProfilePage/Skills'
     import Education from '@/components/ProfilePage/Education'
     import Activity from '@/components/ProfilePage/Activity'
 
     export default {
-    name: 'ProfilePage',
+    name: 'ProfileUserPage',
 
     components: {
-        InfoBlock, Skills, Education, Activity
+        MainUserInfoBlock, Skills, Education, Activity
     },
 
     data: () => ({
