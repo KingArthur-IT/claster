@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "node-forge": "^1.0.0",
+    "postcss": "^8.2.13",
     "slick-carousel": "^1.8.1",
     "vue": "^2.6.11",
     "vue-extend-layout": "^2.0.6",
