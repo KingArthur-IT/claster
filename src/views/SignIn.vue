@@ -55,6 +55,7 @@
 </template>
 
 <script>
+import {mapActions} from "vuex"
 import Button from '@/components/UIKit/Button'
 export default {
     name: "SignIn",
@@ -91,9 +92,13 @@ export default {
         }
     },
     methods: {
+        ...mapActions({
+            getCurrentUser: 'user/getCurrentUser'
+        }),
         signIn () {
             if(this.$refs.signInForm.validate()){
                 this.$router.push({name: "ProfileUserPage"});
+                this.getCurrentUser();
             }
         },
         registration () {
