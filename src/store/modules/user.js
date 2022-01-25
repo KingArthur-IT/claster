@@ -18,11 +18,9 @@ export default{
         },
     },
     actions: {
-        async getCurrentUser(){
-            //const data = await axios.get('https://jsonplaceholder.typicode.com/users');
-            const data = await axios.get('http://localhost:8080/data.json', {headers: { 'Content-Type': 'application/json', 'Accept': 'application/json'}});
-            console.log('users', data)
-            //commit('setCurrentUser', data);
+        async getCurrentUser({commit}){
+            const { data } = await axios.get('https://raw.githubusercontent.com/KingArthur-IT/claster/master/src/userData.json', {headers: { 'Content-Type': 'application/json', 'Accept': 'application/json'}});
+            commit('setCurrentUser', data);
         },
     },
     //plugins: [createPersistedState()]

@@ -7,27 +7,27 @@
             </v-col>
             <!-- User Info -->
             <v-col cols="9">
-                <h2 class="titles">{{userName}}</h2>
-                <p class="mt-3" v-if="userCity">
-                    <strong>Місто: </strong>{{userCity}}
+                <h2 class="titles">{{userInfo.name}}</h2>
+                <p class="mt-3" v-if="userInfo.city">
+                    <strong>Місто: </strong>{{userInfo.city}}
                 </p>
-                <p class="mt-3" v-if="userAge">
-                    <strong>Вік: </strong>{{userAge}}
+                <p class="mt-3" v-if="userInfo.userAge">
+                    <strong>Вік: </strong>{{userInfo.userAge}}
                 </p>
-                <p class="mt-3" v-if="userWork.length">
+                <p class="mt-3" v-if="userInfo.workExperience.length">
                     <ul class="px-0">
                         <strong>Місце роботи: </strong>
-                        <li v-for="(work, index) in userWork" :key="index" class="ml-10">{{work}}</li>
+                        <li v-for="work in userInfo.workExperience" :key="work.id" class="ml-10">{{work}}</li>
                     </ul>                    
                 </p>
-                <p class="mt-3" v-if="userEducation.length">
+                <p class="mt-3" v-if="userInfo.education.length">
                     <ul class="px-0">
                         <strong>Освіта: </strong>
-                        <li v-for="(education, index) in userEducation" :key="index" class="ml-10">{{education}}</li>
+                        <li v-for="education in userInfo.education" :key="education.id" class="ml-10">{{education}}</li>
                     </ul>                    
                 </p>
-                <p class="mt-3" v-if="userCite">
-                    <a :href="userCite" target="_blank" rel="noopener noreferrer">Github repository</a>
+                <p class="mt-3" v-if="userInfo.Cite">
+                    <a :href="userInfo.Cite" target="_blank" rel="noopener noreferrer">Github repository</a>
                 </p>
             </v-col>
             <v-spacer></v-spacer>
@@ -42,22 +42,15 @@
 </template>
 
 <script>
-
+import {mapGetters} from "vuex"
 export default {
     name: 'MainUserInfoBlock',
-
-    components: {
-        
+    computed:{
+        ...mapGetters({
+            userInfo: 'user/get_user'
+        })
     },
 
-    data: () => ({
-        userName: 'Остапенко Артем',
-        userCity: 'Маріуполь',
-        userAge: '29 лет',
-        userWork: ['старший викладач ДВНЗ "Приазовський державний технічний університет"', 'frontend developer', 'CEO "Cluster"', 'фрилансер'],
-        userEducation: ['PhD technical sciences, 2020', 'математик-програміст, закінчив ДВНЗ "Приазовський державний технічний університет", 2014'],
-        userCite: 'github.com',
-    }),
 };
 </script>
 

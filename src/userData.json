@@ -1,0 +1,69 @@
+{
+    "id": 1,
+    "name": "Артем Остапенко",
+    "email": "mail.mail@gmail.com",
+    "city": "Маріуполь",
+    "userAge": "29",
+    "workExperience": [
+        {   "id": 0,
+            "work": "старший викладач ДВНЗ \"Приазовський державний технічний університет\"",
+            "startYear": "2017",
+            "endYear": ""
+        },
+        {   "id": 1,
+            "work": "frontend developer",
+            "startYear": "2021",
+            "endYear": ""
+        },
+        {   "id": 2,
+            "work": "CEO \"Cluster\"",
+            "startYear": "2022",
+            "endYear": ""
+        },
+        {   "id": 3,
+            "work": "фрилансер",
+            "startYear": "2021",
+            "endYear": ""
+        }
+    ],
+    "education": [
+        {
+            "id": 0,
+            "univercity": "ДВНЗ \"Приазовський державний технічний університет\"",
+            "faculty": "Факультет інформаційних технологій",
+            "degree": "Бакалавр",
+            "speciality": "113 - Прикладна математика",
+            "qualification": "бакалавр з прикладної математики",
+            "educationalProgram": "Прикладна математика",
+            "finalYear": "2013",
+            "isWithHonor": true,
+            "otherDescription": ""
+        },
+        {
+            "id": 1,
+            "univercity": "ДВНЗ \"Приазовський державний технічний університет\"",
+            "faculty": "Факультет інформаційних технологій",
+            "degree": "Магістр",
+            "speciality": "113 - Прикладна математика",
+            "qualification": "математик-програміст",
+            "educationalProgram": "Прикладна математика",
+            "finalYear": "2014",
+            "isWithHonor": true,
+            "otherDescription": ""
+        },
+        {
+            "id": 2,
+            "univercity": "",
+            "faculty": "",
+            "degree": "PhD in technical sciences",
+            "speciality": "010502 mathematical modeling and computational methods",
+            "qualification": "",
+            "educationalProgram": "",
+            "finalYear": "2020",
+            "isWithHonor": false,
+            "otherDescription": ""
+        }
+    ],
+    "Cite": "github.com",
+    "AboutMyself": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo aut pariatur illum voluptatem exercitationem ea nesciunt accusantium? Quam dolor voluptatum, provident consequatur ab nobis. Expedita perspiciatis consequatur accusantium nisi distinctio eum error itaque assumenda, nam quibusdam iste quod magni, exercitationem non reprehenderit soluta repellat libero omnis. Natus eaque suscipit aut eveniet deleniti adipisci hic dolorem voluptas temporibus dolores? Temporibus atque quod nulla nesciunt quibusdam tenetur placeat incidunt? Officiis omnis harum aliquam consectetur quo dolor labore nulla totam amet natus architecto veniam dolorum, repudiandae accusamus obcaecati, sit sint aspernatur minima sed quod maxime sapiente itaque quas excepturi. Consectetur nulla dolorem aliquid dolorum aliquam sequi maiores rem possimus et officiis, totam saepe ex? Magnam quasi animi provident quidem neque consequuntur vero, nemo nihil facere at labore ratione ipsum quae pariatur odio sed quibusdam voluptas reiciendis corporis quos in beatae delectus fugiat eius! Quo sit iure cumque inventore fuga praesentium. Quaerat consectetur, illum consequuntur delectus ratione alias harum veniam, amet nisi fuga est consequatur. Doloribus architecto nostrum soluta, deserunt vitae saepe illo nemo quas temporibus tempore, eius atque laborum quisquam consectetur aspernatur eaque animi earum. Non corporis iste perspiciatis, rerum quisquam quae eius nulla mollitia illo ipsum amet velit libero, ad inventore?"
+}
