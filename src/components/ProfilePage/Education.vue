@@ -3,8 +3,8 @@
         <h2 class="titles text-center mb-5">Освіта</h2>
         <!-- University -->
         <div class="d-flex mt-10 flex-wrap">
-            <v-col xl="6" lg="6" md="6" sm="12" cols="12" v-for="university in universities" v-bind:key="university.name">
-                <div class="d-flex align-center university-title">
+            <v-col xl="6" lg="6" md="6" sm="12" cols="12" v-for="item in education" v-bind:key="item.id">
+                <div class="d-flex align-center university-title mb-2">
                     <div class="mr-6">
                         <v-img
                             src="@/assets/pstu_logo.png"
@@ -12,11 +12,33 @@
                             width="60px"
                         ></v-img>
                     </div>
-                    <h3 class="titles">{{university.name}}</h3>
+                    <h3 class="titles">
+                        <span>{{item.univercity}}</span>
+                    </h3>
                 </div>
-                <div class="mt-3" v-for="item in university.delatails" v-bind:key="item.value">
-                    <strong class="mr-5">{{item.name}}</strong>{{item.value}}
-                </div>
+                <ul>
+                    <li v-if="item.degree">
+                        <strong class="mr-5">Ступінь:</strong>{{item.degree}}
+                    </li>
+                    <li v-if="item.faculty">
+                        <strong class="mr-5">Факультет</strong>{{item.faculty}}
+                    </li>
+                    <li v-if="item.speciality">
+                        <strong class="mr-5">Спеціальність</strong>{{item.speciality}}
+                    </li>
+                    <li v-if="item.qualification">
+                        <strong class="mr-5">Кваліфікація</strong>{{item.qualification}}
+                    </li>
+                    <li v-if="item.educationalProgram">
+                        <strong class="mr-5">Освітня програма</strong>{{item.educationalProgram}}
+                    </li>
+                    <li v-if="item.finalYear">
+                        <strong class="mr-5">Рік закінчення</strong>{{item.finalYear}}
+                    </li>
+                    <li v-if="item.otherDescription">
+                        <strong class="mr-5"></strong>{{item.otherDescription}}
+                    </li>
+                </ul>
             </v-col>
         </div>
     </v-container>
@@ -24,22 +46,11 @@
 
 <script>
 export default {
-    data: () => ({
-        universities: 
-        [
-            {
-                name: 'ДВНЗ "Приазовський державний технічний університет"',
-                delatails: [
-                    {name: 'Освітньо-кваліфікаційний рівень:', value: 'Бакалавр'},
-                    {name: 'Факультет:', value: 'Факультет інформаційних технологій'},
-                    {name: 'Спеціальність:', value: '113 Прикладна математика'},
-                    {name: 'Освітня програма:', value: 'Комп’ютерне моделювання'},
-                    {name: 'Рік початку навчання:', value: 2009},
-                    {name: 'Рік завершення навчання:', value: 2014},
-                ]
-            },
-        ]
-    })
+    props: {
+        education: {
+            type: Array
+        }
+    }
 }
 </script>
 

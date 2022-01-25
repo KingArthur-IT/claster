@@ -38,15 +38,15 @@
                     <!-- Avatar + Info -->
                     <div class="d-flex align-center" v-bind="attrs" v-on="on">
                         <v-avatar :size="avatarSize">
-                            <v-img src="https://cdn.vuetifyjs.com/images/john.png"></v-img>
+                            <v-img src="@/assets/incognito.jpg"></v-img>
                         </v-avatar>
-                        <v-list>
+                        <v-list v-if="userInfo">
                             <v-list-item>
                                 <v-list-item-content class="mobile">
                                     <v-list-item-title class="text-h6">
-                                        John Leider
+                                        {{userInfo.name}}
                                     </v-list-item-title>
-                                    <v-list-item-subtitle>john@vuetifyjs.com</v-list-item-subtitle>
+                                    <v-list-item-subtitle>{{userInfo.email}}</v-list-item-subtitle>
                                 </v-list-item-content>
 
                                 <v-list-item-action>
@@ -77,6 +77,7 @@
 </template>
 
 <script>
+import {mapGetters} from "vuex"
   export default {
     data: () => ({
       accountItems: [
@@ -112,12 +113,17 @@
     created() {
         window.addEventListener('resize', this.updateWidth);
     },
+    computed:{
+        ...mapGetters({
+            userInfo: 'user/get_user'
+        })
+    },
   }
 </script>
 
 <style scoped>
 .btn-bg{
-    background: linear-gradient(90deg, #00C4DF -31.56%, rgba(11, 129, 229, 0.76) 37.19%, rgba(31, 13, 239, 0.0621078) 123.71%, rgba(195, 196, 196, 0.00520833) 123.73%, rgba(196, 196, 196, 0) 123.74%);
+    background: var(--dark-primary-color);
 }
 .v-list-item__content{
     display: block !important;
