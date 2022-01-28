@@ -31,31 +31,11 @@
 
 export default {
     name: 'Skills',
-
-    data: () => ({
-        hardSkills: [
-            {
-                field: 'Frontend',
-                skills: ['HTML5', 'CSS3', 'JavaScript', 'VueJS', 'SASS', 'GULP']
-            },
-            {
-                field: 'Прикладная математика',
-                skills: ['Линейная аглебра', 'Дифференциальные уравнения', 'Численные методы', 'Вычислительная геометрия', 'Математическое моделирование']
-            },
-            {
-                field: 'Моделирование',
-                skills: ['Имитационное', 'Математическое', 'Физических процессов', 'Comsol Multiphysics', 'AnyLogic', 'Matlab']
-            },
-            {
-                field: 'Педагогика',
-                skills: ['Преподаватель']
-            },
-            {
-                field: 'Наука',
-                skills: ['Технические статьи']
-            },
-        ]
-    }),
+    props:{
+        hardSkills:{
+            type: Array
+        }
+    }
 }
 </script>
 

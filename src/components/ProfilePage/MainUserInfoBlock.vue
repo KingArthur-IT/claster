@@ -40,7 +40,7 @@
             </v-col>
             <v-spacer></v-spacer>
         </v-row>
-        <div v-if="userInfo.AboutMyself">
+        <div v-if="userInfo && userInfo.AboutMyself">
             <h2 class="titles text-center mb-5">Про мене</h2>
             <p>
                 {{userInfo.AboutMyself}}

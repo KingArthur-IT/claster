@@ -3,7 +3,7 @@
       <v-row class="d-flex justify-space-between" align="center">
         <!-- Logo -->
         <v-col cols="5" xl="2" lg="2" md="3" sm="3" class="mr-auto">
-            <router-link :to="{name: 'ProfilePage'}">
+            <router-link :to="{name: 'ProfileUserPage'}">
                 <v-img src="@/assets/cluster_header_logo.png" height="100%" alt="Cluster"></v-img>
             </router-link>
         </v-col>

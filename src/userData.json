@@ -65,5 +65,64 @@
         }
     ],
     "Cite": "github.com",
-    "AboutMyself": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo aut pariatur illum voluptatem exercitationem ea nesciunt accusantium? Quam dolor voluptatum, provident consequatur ab nobis. Expedita perspiciatis consequatur accusantium nisi distinctio eum error itaque assumenda, nam quibusdam iste quod magni, exercitationem non reprehenderit soluta repellat libero omnis. Natus eaque suscipit aut eveniet deleniti adipisci hic dolorem voluptas temporibus dolores? Temporibus atque quod nulla nesciunt quibusdam tenetur placeat incidunt? Officiis omnis harum aliquam consectetur quo dolor labore nulla totam amet natus architecto veniam dolorum, repudiandae accusamus obcaecati, sit sint aspernatur minima sed quod maxime sapiente itaque quas excepturi. Consectetur nulla dolorem aliquid dolorum aliquam sequi maiores rem possimus et officiis, totam saepe ex? Magnam quasi animi provident quidem neque consequuntur vero, nemo nihil facere at labore ratione ipsum quae pariatur odio sed quibusdam voluptas reiciendis corporis quos in beatae delectus fugiat eius! Quo sit iure cumque inventore fuga praesentium. Quaerat consectetur, illum consequuntur delectus ratione alias harum veniam, amet nisi fuga est consequatur. Doloribus architecto nostrum soluta, deserunt vitae saepe illo nemo quas temporibus tempore, eius atque laborum quisquam consectetur aspernatur eaque animi earum. Non corporis iste perspiciatis, rerum quisquam quae eius nulla mollitia illo ipsum amet velit libero, ad inventore?"
+    "AboutMyself": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo aut pariatur illum voluptatem exercitationem ea nesciunt accusantium? Quam dolor voluptatum, provident consequatur ab nobis. Expedita perspiciatis consequatur accusantium nisi distinctio eum error itaque assumenda, nam quibusdam iste quod magni, exercitationem non reprehenderit soluta repellat libero omnis. Natus eaque suscipit aut eveniet deleniti adipisci hic dolorem voluptas temporibus dolores? Temporibus atque quod nulla nesciunt quibusdam tenetur placeat incidunt? Officiis omnis harum aliquam consectetur quo dolor labore nulla totam amet natus architecto veniam dolorum, repudiandae accusamus obcaecati, sit sint aspernatur minima sed quod maxime sapiente itaque quas excepturi. Consectetur nulla dolorem aliquid dolorum aliquam sequi maiores rem possimus et officiis, totam saepe ex? Magnam quasi animi provident quidem neque consequuntur vero, nemo nihil facere at labore ratione ipsum quae pariatur odio sed quibusdam voluptas reiciendis corporis quos in beatae delectus fugiat eius! Quo sit iure cumque inventore fuga praesentium. Quaerat consectetur, illum consequuntur delectus ratione alias harum veniam, amet nisi fuga est consequatur. Doloribus architecto nostrum soluta, deserunt vitae saepe illo nemo quas temporibus tempore, eius atque laborum quisquam consectetur aspernatur eaque animi earum. Non corporis iste perspiciatis, rerum quisquam quae eius nulla mollitia illo ipsum amet velit libero, ad inventore?",
+    "hardSkills": [
+        {
+            "field": "Frontend",
+            "skills": ["HTML5", "CSS3", "JavaScript", "VueJS", "SASS", "GULP"]
+        },
+        {
+            "field": "Прикладная математика",
+            "skills": ["Линейная аглебра", "Дифференциальные уравнения", "Численные методы", "Вычислительная геометрия", "Математическое моделирование"]
+        },
+        {
+            "field": "Моделирование",
+            "skills": ["Имитационное моделирование", "Математическое моделирование", "Моделирование физических процессов", "Comsol Multiphysics", "AnyLogic", "Matlab"]
+        },
+        {
+            "field": "Педагогика",
+            "skills": ["Преподаватель"]
+        },
+        {
+            "field": "Наука",
+            "skills": ["Технические статьи"]
+        }
+    ],
+    "activities": [
+        {
+            "type": "",
+            "img": "@/assets/sertificate1.jpg",
+            "title": "Сертификация по верстке",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, minima nesciunt. Voluptatum id sint, dicta magnam quibusdam harum eligendi iusto! Quidem quaerat velit nobis omnis dicta molestiae beatae cum et!",
+            "skills": ["HTML5", "CSS3"]
+        },
+        {
+            "type": "",
+            "img": "@/assets/sertificate1.jpg",
+            "title": "Конференция по моделированию",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, minima nesciunt. Voluptatum id sint, dicta magnam quibusdam harum eligendi iusto! Quidem quaerat velit nobis omnis dicta molestiae beatae cum et!",
+            "skills": ["Математическое моделирование", "Моделирование физических процессов", "Технические статьи"]
+        },
+        {
+            "type": "",
+            "img": "@/assets/sertificate1.jpg",
+            "title": "Курс по Vue",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, minima nesciunt. Voluptatum id sint, dicta magnam quibusdam harum eligendi iusto! Quidem quaerat velit nobis omnis dicta molestiae beatae cum et!",
+            "skills": ["JavaScript", "VueJS"]
+        },
+        {
+            "type": "Startup courses",
+            "img": "@/assets/sertificate1.jpg",
+            "title": "",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, minima nesciunt. Voluptatum id sint, dicta magnam quibusdam harum eligendi iusto! Quidem quaerat velit nobis omnis dicta molestiae beatae cum et!",
+            "skills": []
+        },
+        {
+            "type": "",
+            "img": "@/assets/sertificate1.jpg",
+            "title": "Практика",
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, minima nesciunt. Voluptatum id sint, dicta magnam quibusdam harum eligendi iusto! Quidem quaerat velit nobis omnis dicta molestiae beatae cum et!",
+            "skills": []
+        }
+    ]
 }

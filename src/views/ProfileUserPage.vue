@@ -1,9 +1,9 @@
 <template>
     <div class="overflow-hide">
         <MainUserInfoBlock :userInfo="userInfo"/>
-        <Education v-if="userInfo" :education="userInfo.education" />
-        <Skills />
-        <Activity />
+        <Education v-if="userInfo && userInfo.education" :education="userInfo.education" />
+        <Skills v-if="userInfo && userInfo.hardSkills" :hardSkills="userInfo.hardSkills" />
+        <Activity v-if="userInfo && userInfo.activities" :activities="userInfo.activities"/>
     </div>
 </template>
 
