@@ -91,7 +91,7 @@
     "activities": [
         {
             "type": "",
-            "img": "@/assets/sertificate1.jpg",
+            "img": "'@/assets/sertificate1.jpg'",
             "title": "Сертификация по верстке",
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, minima nesciunt. Voluptatum id sint, dicta magnam quibusdam harum eligendi iusto! Quidem quaerat velit nobis omnis dicta molestiae beatae cum et!",
             "skills": ["HTML5", "CSS3"]
