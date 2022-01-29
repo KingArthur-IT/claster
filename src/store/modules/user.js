@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-//import createPersistedState from 'vuex-persistedstate'
 import axios from 'axios';
 Vue.use(Vuex)
 
@@ -22,6 +21,5 @@ export default{
             const { data } = await axios.get('https://raw.githubusercontent.com/KingArthur-IT/claster/master/src/userData.json', {headers: { 'Content-Type': 'application/json', 'Accept': 'application/json'}});
             commit('setCurrentUser', data);
         },
-    },
-    //plugins: [createPersistedState()]
+    }
 }
